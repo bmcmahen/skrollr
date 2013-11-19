@@ -5,13 +5,14 @@
  *
  * Free to use under terms of MIT license
  */
-(function(window, document, undefined) {
 	'use strict';
 
 	/*
 	 * Global api.
 	 */
-	var skrollr = window.skrollr = {
+	
+
+	var skrollr = module.exports = {
 		get: function() {
 			return _instance;
 		},
@@ -21,6 +22,7 @@
 		},
 		VERSION: '0.6.17'
 	};
+
 
 	//Minify optimization.
 	var hasProp = Object.prototype.hasOwnProperty;
@@ -1636,4 +1638,3 @@
 
 	//Animation frame id returned by RequestAnimationFrame (or timeout when RAF is not supported).
 	var _animFrame;
-}(window, document));
