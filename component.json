@@ -13,6 +13,7 @@
   "development": {},
   "license": "MIT",
   "scripts": [
-    "src/scrollr.js"
-  ]
+    "src/skrollr.js"
+  ],
+  "main": ["src/skrollr.js"]
 }
